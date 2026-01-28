@@ -365,11 +365,11 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-left">
-              <a href="#" onClick={(e) => handleSmoothScroll(e, '.hero')} className="logo-link">
+              <div className="logo-link" style={{ cursor: 'default' }}>
                 <img src={logo} alt="WHO" className="logo-img footer-logo" />
                 <span className="logo-text">WHO<span className="accent">.</span></span>
-              </a>
-              <p>전북대학교 컴퓨터인공지능공학부 동아리</p>
+              </div>
+              <p>전북대학교 컴퓨터인공지능학부 동아리</p>
             </div>
             <div className="footer-contact">
               <p>동아리실: 공과대학 7호관 지하 7007-1호</p>
