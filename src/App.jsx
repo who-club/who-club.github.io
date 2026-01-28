@@ -116,7 +116,7 @@ function App() {
             <span className="gradient-text"> WHO와 함께하세요 </span>
           </h1>
           <p className="hero-subtitle">
-            전북대 컴퓨터인공지능공학부 동아리<br/>
+            전북대 컴퓨터인공지능학부 동아리<br/>
             프로젝트부터 친목까지, WHO와 함께
           </p>
           <div className="hero-cta">
