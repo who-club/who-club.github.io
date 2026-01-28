@@ -349,7 +349,7 @@ function App() {
                 </svg>
                 메일 문의
               </a>
-              <a href="https://open.kakao.com/o/gTuXTIdi" className="btn-secondary" target="_blank" rel="noopener noreferrer">
+              <a href="https://open.kakao.com/o/gzmOlJdi" className="btn-secondary" target="_blank" rel="noopener noreferrer">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 3C6.477 3 2 6.477 2 10.5c0 2.442 1.443 4.64 3.8 6.11l-1.22 4.39c-.09.33.22.62.53.49l5.23-2.24c.55.07 1.12.11 1.66.11 5.523 0 10-3.477 10-7.5S17.523 3 12 3z"/>
                 </svg>
