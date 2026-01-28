@@ -109,7 +109,7 @@ function App() {
           <div className="hero-badge">신입부원 모집 2026</div>
           <h1 className="hero-title">
             첫 시작,<br/>
-            <span className="gradient-text"> WHO와 함께하세요</span>
+            <span className="gradient-text"> WHO와 함께하세요 </span>
           </h1>
           <p className="hero-subtitle">
             전북대 컴퓨터인공지능공학부 동아리<br/>
