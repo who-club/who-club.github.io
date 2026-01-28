@@ -1,0 +1,41 @@
+/* Global Reset */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth Scrolling */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection */
+::selection {
+  background: #00FF88;
+  color: #0A0A0A;
+}
+
+::-moz-selection {
+  background: #00FF88;
+  color: #0A0A0A;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00FF88;
+}
