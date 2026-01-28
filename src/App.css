@@ -78,12 +78,43 @@ header .container {
   align-items: center;
 }
 
-.logo {
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.logo-link:hover {
+  transform: scale(1.05);
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  filter: brightness(0) saturate(100%) invert(82%) sepia(47%) saturate(2030%) hue-rotate(91deg) brightness(101%) contrast(103%);
+  transition: filter 0.3s ease;
+}
+
+.logo-link:hover .logo-img {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(98%) saturate(1000%) hue-rotate(130deg) brightness(101%) contrast(101%);
+}
+
+.logo-text {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--white);
   letter-spacing: -1px;
+  margin-left: 0.5rem;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.footer-logo-link {
+  cursor: default;
 }
 
 .accent {

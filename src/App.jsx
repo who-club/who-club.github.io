@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import logo from './assets/logo.png'
 
 function App() {
   const [scrolled, setScrolled] = useState(false)
@@ -91,7 +92,10 @@ function App() {
       {/* Header */}
       <header className={scrolled ? 'scrolled' : ''}>
         <div className="container">
-          <div className="logo">WHO<span className="accent">.</span></div>
+          <a href="#" onClick={(e) => handleSmoothScroll(e, '.hero')} className="logo-link">
+            <img src={logo} alt="WHO" className="logo-img" />
+            <span className="logo-text">WHO<span className="accent">.</span></span>
+          </a>
           <nav>
             <a href="#about" onClick={(e) => handleSmoothScroll(e, '#about')}>About</a>
             <a href="#activities" onClick={(e) => handleSmoothScroll(e, '#activities')}>Activities</a>
@@ -360,7 +364,10 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-left">
-              <div className="logo">WHO<span className="accent">.</span></div>
+              <div className="logo-link footer-logo-link">
+                <img src={logo} alt="WHO" className="logo-img footer-logo" />
+                <span className="logo-text">WHO<span className="accent">.</span></span>
+              </div>
               <p>전북대학교 컴퓨터인공지능공학부 동아리</p>
             </div>
             <div className="footer-links">
