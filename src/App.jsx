@@ -324,7 +324,7 @@ function App() {
               </div>
               <div className="join-item">
                 <div className="join-label">회비</div>
-                <div className="join-value">학기당<br/>10,000원</div>
+                <div className="join-value">학기당<br/>15,000원</div>
               </div>
               <div className="join-item">
                 <div className="join-label">주요 활동</div>
