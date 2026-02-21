@@ -138,7 +138,7 @@ function App() {
         <div className="container">
           <div className="stats-grid">
             <div className="stat-card reveal">
-              <div className="stat-number">50+</div>
+              <div className="stat-number">20+</div>
               <div className="stat-label">Members</div>
             </div>
             <div className="stat-card reveal">
@@ -320,7 +320,7 @@ function App() {
             <div className="join-grid">
               <div className="join-item">
                 <div className="join-label">모집 대상</div>
-                <div className="join-value">컴퓨터인공지능학부 재학생<br/>공학2계열 신입생</div>
+                <div className="join-value">컴퓨터인공지능학부 재학생<br/>공학계열2 신입생</div>
               </div>
               <div className="join-item">
                 <div className="join-label">회비</div>
