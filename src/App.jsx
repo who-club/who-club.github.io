@@ -138,7 +138,7 @@ function App() {
         <div className="container">
           <div className="stats-grid">
             <div className="stat-card reveal">
-              <div className="stat-number">20+</div>
+              <div className="stat-number">60+</div>
               <div className="stat-label">Members</div>
             </div>
             <div className="stat-card reveal">
