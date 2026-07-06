@@ -13,13 +13,13 @@
 
 /* Selection */
 ::selection {
-  background: #00FF88;
-  color: #0A0A0A;
+  background: #4F46E5;
+  color: #FFFFFF;
 }
 
 ::-moz-selection {
-  background: #00FF88;
-  color: #0A0A0A;
+  background: #4F46E5;
+  color: #FFFFFF;
 }
 
 /* Scrollbar */
@@ -28,14 +28,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0A0A0A;
+  background: #F5F5F8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2A2A2A;
+  background: #D4D3E0;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00FF88;
+  background: #4F46E5;
 }

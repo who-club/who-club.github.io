@@ -4,7 +4,11 @@ import logo from './assets/logo.png'
 
 function App() {
   const [scrolled, setScrolled] = useState(false)
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const [cursorActive, setCursorActive] = useState(false)
+  const [mousePosition, setMousePosition] = useState({
+    x: typeof window !== 'undefined' ? window.innerWidth / 2 : 0,
+    y: typeof window !== 'undefined' ? window.innerHeight / 2 : 0,
+  })
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +30,8 @@ function App() {
     const handleMouseMove = (e) => {
       lastX = e.clientX
       lastY = e.clientY
+
+      setCursorActive(true)
 
       if (animationFrameId) {
         return
@@ -67,6 +73,9 @@ function App() {
     return () => window.removeEventListener('scroll', checkReveal)
   }, [])
 
+  const tiltX = ((mousePosition.y / window.innerHeight) - 0.5) * -12
+  const tiltY = ((mousePosition.x / window.innerWidth) - 0.5) * 12
+
   const handleSmoothScroll = (e, targetId) => {
     e.preventDefault()
     const target = document.querySelector(targetId)
@@ -82,10 +91,11 @@ function App() {
     <>
       {/* Custom Cursor */}
       <div 
-        className="custom-cursor" 
+        className="custom-cursor"
         style={{
           left: `${mousePosition.x}px`,
-          top: `${mousePosition.y}px`
+          top: `${mousePosition.y}px`,
+          opacity: cursorActive ? 1 : 0
         }}
       />
 
@@ -109,15 +119,24 @@ function App() {
 
       {/* Hero */}
       <section className="hero">
+        <div className="hero-bg-blob blob-1"></div>
+        <div className="hero-bg-blob blob-2"></div>
         <div className="container">
           <div className="hero-badge">신입부원 모집 2026</div>
+          <div
+            className="hero-visual"
+            style={{ transform: `perspective(800px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)` }}
+          >
+            <div className="hero-logo-glow"></div>
+            <img src={logo} alt="WHO" className="hero-logo-mark" />
+          </div>
           <h1 className="hero-title">
-            첫 시작,<br/>
-            <span className="gradient-text"> WHO와 함께하세요 </span>
+            <span className="hero-title-line">전북대 컴퓨터인공지능학부 동아리</span>
+            <span className="hero-brand">WHO.</span>
           </h1>
           <p className="hero-subtitle">
-            전북대 컴퓨터인공지능학부 동아리<br/>
-            프로젝트부터 친목까지, WHO와 함께
+            첫 시작, 프로젝트부터 친목까지<br/>
+            WHO와 함께하세요
           </p>
           <div className="hero-cta">
             <a href="https://forms.gle/zuw5L81n8TBw1w7C8" className="btn-primary" target="_blank" rel="noopener noreferrer">
