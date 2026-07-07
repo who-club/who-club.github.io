@@ -110,7 +110,7 @@ function App() {
             <a href="#about" onClick={(e) => handleSmoothScroll(e, '#about')}>About</a>
             <a href="#activities" onClick={(e) => handleSmoothScroll(e, '#activities')}>Activities</a>
             <a href="#vision" onClick={(e) => handleSmoothScroll(e, '#vision')}>Vision</a>
-            <a href="https://forms.gle/zuw5L81n8TBw1w7C8" className="btn-join" target="_blank" rel="noopener noreferrer">
+            <a href="https://forms.gle/tpxxL9fDvQDbDyiG7" className="btn-join" target="_blank" rel="noopener noreferrer">
               Join Us →
             </a>
           </nav>
@@ -139,7 +139,7 @@ function App() {
             WHO와 함께하세요
           </p>
           <div className="hero-cta">
-            <a href="https://forms.gle/zuw5L81n8TBw1w7C8" className="btn-primary" target="_blank" rel="noopener noreferrer">
+            <a href="https://forms.gle/tpxxL9fDvQDbDyiG7" className="btn-primary" target="_blank" rel="noopener noreferrer">
               지원하기
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
